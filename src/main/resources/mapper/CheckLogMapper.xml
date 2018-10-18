@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.CheckLogMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.model.CheckLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="order_id" jdbcType="INTEGER" property="orderId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="auditing_process" jdbcType="INTEGER" property="auditingProcess" />
+    <result column="auditing_user_id" jdbcType="INTEGER" property="auditingUserId" />
+    <result column="auditing_user_name" jdbcType="VARCHAR" property="auditingUserName" />
+    <result column="next_auditing_process" jdbcType="INTEGER" property="nextAuditingProcess" />
+    <result column="next_auditing_user_id" jdbcType="INTEGER" property="nextAuditingUserId" />
+    <result column="auditing_msg" jdbcType="VARCHAR" property="auditingMsg" />
+    <result column="operation" jdbcType="VARCHAR" property="operation" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+</mapper>

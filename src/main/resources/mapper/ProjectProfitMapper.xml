@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.ProjectProfitMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.model.ProjectProfit">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="poject_id" jdbcType="INTEGER" property="pojectId" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="trade_term" jdbcType="VARCHAR" property="tradeTerm" />
+    <result column="project_type" jdbcType="VARCHAR" property="projectType" />
+    <result column="contract_amount_usd" jdbcType="DECIMAL" property="contractAmountUsd" />
+    <result column="contract_amount" jdbcType="DECIMAL" property="contractAmount" />
+    <result column="exchange_rate" jdbcType="DECIMAL" property="exchangeRate" />
+    <result column="tax_refund" jdbcType="DECIMAL" property="taxRefund" />
+    <result column="land_freight" jdbcType="DECIMAL" property="landFreight" />
+    <result column="land_insurance" jdbcType="DECIMAL" property="landInsurance" />
+    <result column="port_charges" jdbcType="DECIMAL" property="portCharges" />
+    <result column="inspection_fee" jdbcType="DECIMAL" property="inspectionFee" />
+    <result column="international_transport" jdbcType="DECIMAL" property="internationalTransport" />
+    <result column="tariff" jdbcType="DECIMAL" property="tariff" />
+    <result column="vat" jdbcType="DECIMAL" property="vat" />
+    <result column="customs_clear_fee" jdbcType="DECIMAL" property="customsClearFee" />
+    <result column="customs_agent_fee" jdbcType="DECIMAL" property="customsAgentFee" />
+    <result column="transportion_insurance" jdbcType="DECIMAL" property="transportionInsurance" />
+    <result column="export_credit_insurance" jdbcType="DECIMAL" property="exportCreditInsurance" />
+    <result column="other_credit" jdbcType="VARCHAR" property="otherCredit" />
+    <result column="travel_expenses" jdbcType="DECIMAL" property="travelExpenses" />
+    <result column="project_cost" jdbcType="DECIMAL" property="projectCost" />
+    <result column="gross_profit" jdbcType="DECIMAL" property="grossProfit" />
+    <result column="agent_fee" jdbcType="DECIMAL" property="agentFee" />
+    <result column="raise_fee" jdbcType="DECIMAL" property="raiseFee" />
+    <result column="guarance_fee" jdbcType="DECIMAL" property="guaranceFee" />
+    <result column="financing_interest" jdbcType="DECIMAL" property="financingInterest" />
+    <result column="bank_fees" jdbcType="DECIMAL" property="bankFees" />
+    <result column="domestic_taxs" jdbcType="DECIMAL" property="domesticTaxs" />
+    <result column="foreign_taxes" jdbcType="DECIMAL" property="foreignTaxes" />
+    <result column="manage_fee" jdbcType="DECIMAL" property="manageFee" />
+    <result column="after_profit" jdbcType="DECIMAL" property="afterProfit" />
+    <result column="before_profit" jdbcType="DECIMAL" property="beforeProfit" />
+    <result column="quotation_profit" jdbcType="DECIMAL" property="quotationProfit" />
+  </resultMap>
+</mapper>

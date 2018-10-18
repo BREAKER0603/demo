@@ -1,7 +1,10 @@
-package com.example.demo.dao;
+package com.example.demo.dao.db1;
 
+import com.example.demo.core.universal.Mapper;
 import com.example.demo.model.UserInfo;
 import org.springframework.data.repository.query.Param;
+
+import java.util.List;
 
 /**
  * @Author:SHIGS
@@ -10,6 +13,8 @@ import org.springframework.data.repository.query.Param;
  * @modified By
  */
 
-public interface UserInfoMapper {
+public interface UserInfoMapper extends Mapper<UserInfo>{
     UserInfo selectById(@Param("id") Integer id);
+
+    List<UserInfo> selectAll();
 }
